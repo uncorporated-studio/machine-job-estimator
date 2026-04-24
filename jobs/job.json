@@ -1,0 +1,35 @@
+{
+  "input_svg": "input/280126_0x27e885daa7a245bb6599a34a47db6f877b835d373e9828ce9a5528a85feb5a8b.svg",
+
+  "generator": {
+    "target_width_mm": 300,
+    "target_height_mm": 240,
+
+    "feedrate_mm_min": 5000,
+    "travel_z_mm": 3.0,
+
+    "steps": 100000000,
+    "decrement_mm": 0.01,
+
+    "sharpen_distance_mm": 100000000,
+    "sharpen_macro": "M98 P\"/macros/sharpen.g\"",
+    "sharpen_log_file": "sharpen.log",
+
+    "curve_samples": 20,
+    "skip_path_classes": ["svg-export-bg"],
+
+    "optimize_order": {
+      "enabled": false,
+      "mode": "nearest",
+      "row_mm": 5.0
+    }
+  },
+
+  "estimator": {
+    "speed_factor": 1.0,
+    "rapid_mm_min": 10000,
+    "macro_seconds": {
+      "/macros/sharpen.g": 5.0
+    }
+  }
+}
